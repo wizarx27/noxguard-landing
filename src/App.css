@@ -1,38 +1,163 @@
-.App {
+@font-face {
+  font-family: 'Prompt-Regular';
+  src: url('./fonts/Prompt-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Prompt-Bold';
+  src: url('./fonts/Prompt-Bold.ttf') format('truetype');
+}
+
+body{
+  background-color: #131313;
+  overflow-x: hidden;
+}
+.nav-container a{
+  font-family: 'Prompt-Regular';
+  font-size: 13px;
+  margin: 0 15px;
+}
+
+.section{
+  position: relative;
+  
+}
+
+.sign-in-btn{
+  margin-left: 90px;
+}
+.sign-in-btn-small{
+  margin-left: 10px;
+}
+
+.green-text{
+  color: #7BF273;
+}
+
+.banner-bg{
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+}
+
+.banner-title{
+  font-family: 'Prompt-Regular';
+  color: white;
+  padding-top: 20%;
+  font-weight: bold;
+}
+.separator{
+  height: 30px;
+  background-color: #7BF273;
+  width: 100%;
+}
+.separator.tiny{
+  height: 10px;
+}
+.started-btn{
+  background-color: transparent !important;
+  color: #7BF273 !important;
+  border: 3px solid #7BF273 !important;
+  height: 45px !important;
+  /* outline: 0px solid #7BF273; */
+
+}
+.banner-text{
+  height: 100%;
+}
+.banner-text > *{
+  height: 50%;
+}
+
+.text-align-center{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section-2,.section-3,.section-4,.section-5,.section-6{
+  background-color: #201c2b;
+}
+.footer{
+  background-color: #131313;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.section-2-content{
   color: white;
+  padding: 70px 25%;
+  /* padding-top: 70px; */
+}
+.section-3-content{
+  color: white;
+  /* padding: 70px 10%; */
+  /* padding-top: 70px; */
 }
 
-.App-link {
-  color: #61dafb;
+.section-3-content-content{
+  gap: 20px;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img-about-us{
+  height: 400px;
+  margin: auto;
+  display: block;
+}
+
+.section-4-content{
+  color: white;
+  padding: 0 25%;
+}
+
+.section-5{
+  color: white;
+  padding-bottom: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.section-6{
+  color: white;
+  padding-bottom: 100px;
+}
+
+.team-row{
+  gap: 60px;
+}
+
+.margin-offset{
+  margin-left: 28px;
+}
+
+.our-service-content-title{
+  font-size: 40px;
+  font-family: 'Prompt-Bold';
+}
+
+.about-us-below{
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.img-team{
+  width: 250px;
+}
+
+.team-name{
+  font-family: 'Prompt-Regular';
+  color: #7BF273;
+  font-weight: bold;
+}
+
+.footer-media{
+  gap: 10px
+}
+
+.footer-gap{
+  width: 95% !important;
+  height: 1px;
+  background-color: white;
+  margin: auto;
+}
+
+.copyright-footer{
+  color: white;
 }
