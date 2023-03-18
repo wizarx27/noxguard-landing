@@ -108,6 +108,7 @@ body{
 .section-3-content-content{
   gap: 20px;
   text-align: center;
+  padding-bottom: 110px;
 }
 
 .img-about-us{
@@ -119,6 +120,7 @@ body{
 .section-4-content{
   color: white;
   padding: 0 20%;
+  padding-bottom: 100px;
 }
 .section-4-content-sm{
   color: white;
@@ -129,7 +131,9 @@ body{
   font-weight: bolder;
   font-size: 50px;
 }
-
+.our-values-title{
+  margin-top: 100px;
+}
 .about-us-title{
   text-align: center;
 }
@@ -143,6 +147,7 @@ body{
 
 .section-5{
   color: white;
+  padding-top: 100px;
   padding-bottom: 100px;
   padding-left: 20px;
   padding-right: 20px;
@@ -211,7 +216,7 @@ body{
 
 .header-gap{
   position: relative;
-  top: 20px;
+  top: 50px;
   width: 95% !important;
   height: 1px;
   background-color: white;

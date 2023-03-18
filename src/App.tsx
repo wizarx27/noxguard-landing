@@ -118,7 +118,7 @@ function App() {
         <Row className='w-100 h-100 m-0'>
           <Col xxl="12" xl="12" className='p-0'>
               <div className='section-3-content'>
-                <h2 className='text-align-center my-3 our-values-title mt-5'>OUR VALUES</h2>
+                <h2 className='text-align-center our-values-title'>OUR VALUES</h2>
                 <div className='d-flex section-3-content-content justify-content-center flex-wrap'>
                   <div className='d-flex flex-column align-items-center mb-5'>
                     <Image src={IcnPrice} width={305} height={305}/>
@@ -152,7 +152,7 @@ function App() {
           </Col>
         </Row>
       </div>
-      <div className='section section-4 pb-5' >
+      <div className='section section-4' >
         <Row className='w-100 h-100 m-0'>
           <Col xxl="12" xl="12" className='h-100'>
               <Image src={logoAboutUs} className='img-about-us my-5'/>
