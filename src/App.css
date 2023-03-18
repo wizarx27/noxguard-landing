@@ -124,9 +124,13 @@ body{
   padding: 0 5%;
 }
 
-.about-us-title,.our-service-title,.our-values-title,.the-team-title{
+.about-us-title,.our-values-title,.the-team-title{
   font-weight: bolder;
   font-size: 50px;
+}
+.our-service-title{
+  font-weight: bold;
+  font-size: 60px;
 }
 
 .section-5{
@@ -163,6 +167,13 @@ body{
 .our-service-content-title{
   font-size: 40px;
   font-family: 'Prompt-Bold';
+  text-decoration: underline;
+  color: #7BF273;
+}
+
+.our-service-content-title-sm{
+  width: min-content;
+  text-align: center;
 }
 
 .about-us-below{
@@ -182,6 +193,7 @@ body{
   margin-top: 15px;
   margin-bottom: 0px;
   font-size: 30px;
+  cursor: pointer;
 }
 
 .footer-media{
@@ -214,4 +226,8 @@ body{
 
 .copyright-footer{
   color: white;
+}
+
+.social-media-img{
+  cursor: pointer;
 }

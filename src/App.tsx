@@ -179,41 +179,41 @@ function App() {
           </Col>
         </Row>
         <Row className={`w-100 h-100 m-0 ${windowSize[0] < 1200 ? "mt-5" : "my-5"} `}>
-          <Col xxl="6" xl="6" className='h-100'>
-              <div onMouseEnter={()=>{setPentestOpen(true)}} onMouseLeave={()=>{setPentestOpen(false)}} className='d-flex align-items-center'>
+          <Col xxl="6" xl="6" className='h-100 mb-5'>
+              <div onMouseEnter={()=>{setPentestOpen(true)}} onMouseLeave={()=>{setPentestOpen(false)}} className='d-flex align-items-center justify-content-center'>
                 <Image src={decor3} width={20} height={20}/>
                 <span className='ms-2 our-service-content-title'>Penetration Testing</span>
               </div>
-              <p className={`margin-offset service-description ${pentestOpen ? "active" : ""} `}>
+              <p className={`margin-offset text-align-center service-description ${pentestOpen ? "active" : ""} `}>
                 Penetration testing is a thorough examination of your web and mobile applications,databases, infrastructure, and networks to assess their security posture
               </p>              
           </Col>
-          <Col xxl="6" xl="6" className='h-100'>
-              <div onMouseEnter={()=>{setemployeeTraining(true)}} onMouseLeave={()=>{setemployeeTraining(false)}} className='d-flex align-items-center'>
+          <Col xxl="6" xl="6" className='h-100 mb-5'>
+              <div onMouseEnter={()=>{setemployeeTraining(true)}} onMouseLeave={()=>{setemployeeTraining(false)}} className='d-flex align-items-center justify-content-center'>
                 <Image src={decor3} width={20} height={20}/>
                 <span className='ms-2 our-service-content-title'>Employee Training</span>
               </div>
-              <p className={`margin-offset service-description ${employeeTraining ? "active" : ""} `}> 
+              <p className={`margin-offset text-align-center service-description ${employeeTraining ? "active" : ""} `}> 
                 Our training program is designed to increase your employees security awareness through social engineering, briefings, and phishing simulations. This is crucial because humans are often the weakest link in cybersecurity.
               </p>  
           </Col>
         </Row>
         <Row className={`w-100 h-100 m-0 ${windowSize[0] < 1200 ? "mb-5" : "my-5"} `}>
-          <Col xxl="6" xl="6" className='h-100'>
-              <div onMouseEnter={()=>{setIsoOpen(true)}} onMouseLeave={()=>{setIsoOpen(false)}} className='d-flex align-items-center'>
+          <Col xxl="6" xl="6" className='h-100 mb-5'>
+              <div onMouseEnter={()=>{setIsoOpen(true)}} onMouseLeave={()=>{setIsoOpen(false)}} className='d-flex align-items-center justify-content-center'>
                 <Image src={decor3} width={20} height={20}/>
-                <span className='ms-2 our-service-content-title'>ISO 27001</span>
+                <span className={'ms-2 our-service-content-title' + (windowSize[0] < 1200 ? " our-service-content-title-sm" : "")}>ISO 27001 and NIST Assessment</span>
               </div>
-              <p className={`margin-offset service-description ${isoOpen ? "active" : ""} `}>
+              <p className={`margin-offset text-align-center service-description ${isoOpen ? "active" : ""} `}>
                 ISO 27001 and NIST assessment ensures that your organization compiles with the iso 27001 and NIST standards
               </p>              
           </Col>
-          <Col xxl="6" xl="6" className='h-100'>
-              <div onMouseEnter={()=>{setAcademy(true)}} onMouseLeave={()=>{setAcademy(false)}} className='d-flex align-items-center' >
+          <Col xxl="6" xl="6" className='h-100 mb-5'>
+              <div onMouseEnter={()=>{setAcademy(true)}} onMouseLeave={()=>{setAcademy(false)}} className='d-flex align-items-center justify-content-center'>
                 <Image src={decor3} width={20} height={20}/>
                 <span className='ms-2 our-service-content-title'>Academy</span>
               </div>
-              <p className={`margin-offset service-description ${academy ? "active" : ""} `}>
+              <p className={`margin-offset text-align-center service-description ${academy ? "active" : ""} `}>
                 Our Academy offers a comprehensize range of technical classes, from beginner to advanced levels, designed to enhance your knowledge and expertise in cybersecurity
               </p>  
           </Col>
@@ -230,18 +230,18 @@ function App() {
           <Col xxl="12" xl="12" className='h-100 d-flex justify-content-center team-row flex-wrap'>
               <div className='d-flex flex-column align-items-center img-team'>
                 <Image src={imageTeam1} width={250}/>
-                <h3 className='text-align-center team-name'>Ardian Danny</h3>
-                <p className='text-align-center'>CEO & Penetration Tester</p>
+                <h3 className='text-align-center team-name' onClick={()=>{window.location.href = "https://www.linkedin.com/in/ardiandanny/"}}>Ardian Danny</h3>
+                <p className='text-align-center mb-1'>CEO & Penetration Tester</p>
               </div>
               <div className='d-flex flex-column align-items-center img-team'>
                 <Image src={imageTeam2} width={250}/>
-                <h3 className='text-align-center team-name'>Felix Alexander</h3>
-                <p className='text-align-center'>Lead Penetration Tester & Researcher</p>
+                <h3 className='text-align-center team-name' onClick={()=>{window.location.href = "https://www.linkedin.com/in/felix-alexander-603b9b184/"}}>Felix Alexander</h3>
+                <p className='text-align-center m-0'>Lead Penetration Tester & Researcher</p>
               </div>
               <div className='d-flex flex-column align-items-center img-team'>
                 <Image src={imageTeam3} width={250}/>
-                <h3 className='text-align-center team-name'>Delbert Giovanni Lie</h3>
-                <p className='text-align-center'>Penetration Tester</p>
+                <h3 className='text-align-center team-name' onClick={()=>{window.location.href = "https://www.linkedin.com/in/maskirovka/"}}>Delbert Giovanni Lie</h3>
+                <p className='text-align-center m-0'>Penetration Tester</p>
               </div>
 
           </Col>
@@ -250,13 +250,13 @@ function App() {
           <Col xxl="12" xl="12" className='h-100 d-flex justify-content-center team-row flex-wrap'>
               <div className='d-flex flex-column align-items-center img-team'>
                 <Image src={imageTeam4} width={250}/>
-                <h3 className='text-align-center team-name'>Stanley Halim</h3>
-                <p className='text-align-center'>Penetration Tester</p>
+                <h3 className='text-align-center team-name' onClick={()=>{window.location.href = "https://www.linkedin.com/in/stanley-halim/"}}>Stanley Halim</h3>
+                <p className='text-align-center m-0'>Penetration Tester</p>
               </div>
               <div className='d-flex flex-column align-items-center img-team'>
                 <Image src={imageTeam5} width={250}/>
-                <h3 className='text-align-center team-name'>Crisdeo Nuel Silahan</h3>
-                <p className='text-align-center'>Penetration Tester</p>
+                <h3 className='text-align-center team-name' onClick={()=>{window.location.href = "https://www.linkedin.com/in/crisdeonuelsiahaan/"}}>Crisdeo Nuel Silahan</h3>
+                <p className='text-align-center m-0'>Penetration Tester</p>
               </div>
           </Col>
         </Row>
@@ -265,11 +265,11 @@ function App() {
       <div className='section footer' >
         <Row className='w-100 h-100 m-0'>
           <div className='d-flex justify-content-between px-5'>
-            <Image src={logoFooter} width={100} height={100}/>
+            <Image src={logoFooter} width={150} height={150}/>
             <div className='footer-media d-flex align-self-center'>
-              <Image src={LinkedinIcon} width={30} height={30}/>
-              <Image src={gmailIcon} width={30} height={30}/>
-              <Image src={waIcon} width={30} height={30}/>
+              <Image src={LinkedinIcon} width={30} height={30} className='social-media-img' onClick={()=>{window.location.href = "https://www.linkedin.com/company/nox-guard-security/"}}/>
+              <Image src={gmailIcon} width={30} height={30} className='social-media-img' onClick={()=>{window.location.href = "mailto:noxguardprotection@gmail.com"}}/>
+              <Image src={waIcon} width={30} height={30} className='social-media-img'/>
             </div>
           </div>
           <div className='footer-gap mb-3'></div>
