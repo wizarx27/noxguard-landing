@@ -1,6 +1,6 @@
 FROM node
 
-WORKDIR /forest-fire
+WORKDIR /app
 
 COPY . .
 
