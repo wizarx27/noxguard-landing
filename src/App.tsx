@@ -78,7 +78,7 @@ function App() {
       <div className='section' style={{height:windowSize[0] < 1320 ? windowSize[1] * 2 -100 : windowSize[1]-100,width:windowSize[0]-15}}>
         <Image src={banner1} className='banner-bg'/>
         <div className='header-gap mb-3'></div>
-        <Row className='w-100 h-100 m-0'>
+        <Row className='w-100 h-100 m-0 align-items-center'>
           <Col xxl="6" xl="6" lg="12" md="12" sm="12" xs="12" className='p-0'>
             <Image src={logoAboutUs} className='img-about-us my-5'/>
           </Col>
