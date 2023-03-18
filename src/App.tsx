@@ -230,17 +230,17 @@ function App() {
           <Col xxl="12" xl="12" className='h-100 d-flex justify-content-center team-row flex-wrap'>
               <div className='d-flex flex-column align-items-center img-team'>
                 <Image src={imageTeam1} width={250}/>
-                <h3 className='text-align-center team-name' onClick={()=>{window.location.href = "https://www.linkedin.com/in/ardiandanny/"}}>Ardian Danny</h3>
+                <h3 className='text-align-center team-name' onClick={()=>{window.open("https://www.linkedin.com/in/ardiandanny/","_blank")}}>Ardian Danny</h3>
                 <p className='text-align-center mb-1'>CEO & Penetration Tester</p>
               </div>
               <div className='d-flex flex-column align-items-center img-team'>
                 <Image src={imageTeam2} width={250}/>
-                <h3 className='text-align-center team-name' onClick={()=>{window.location.href = "https://www.linkedin.com/in/felix-alexander-603b9b184/"}}>Felix Alexander</h3>
+                <h3 className='text-align-center team-name' onClick={()=>{window.open("https://www.linkedin.com/in/felix-alexander-603b9b184/","_blank")}}>Felix Alexander</h3>
                 <p className='text-align-center m-0'>Lead Penetration Tester & Researcher</p>
               </div>
               <div className='d-flex flex-column align-items-center img-team'>
                 <Image src={imageTeam3} width={250}/>
-                <h3 className='text-align-center team-name' onClick={()=>{window.location.href = "https://www.linkedin.com/in/maskirovka/"}}>Delbert Giovanni Lie</h3>
+                <h3 className='text-align-center team-name' onClick={()=>{window.open("https://www.linkedin.com/in/maskirovka/","_blank")}}>Delbert Giovanni Lie</h3>
                 <p className='text-align-center m-0'>Penetration Tester</p>
               </div>
 
@@ -250,12 +250,12 @@ function App() {
           <Col xxl="12" xl="12" className='h-100 d-flex justify-content-center team-row flex-wrap'>
               <div className='d-flex flex-column align-items-center img-team'>
                 <Image src={imageTeam4} width={250}/>
-                <h3 className='text-align-center team-name' onClick={()=>{window.location.href = "https://www.linkedin.com/in/stanley-halim/"}}>Stanley Halim</h3>
+                <h3 className='text-align-center team-name' onClick={()=>{window.open("https://www.linkedin.com/in/stanley-halim/","_blank")}}>Stanley Halim</h3>
                 <p className='text-align-center m-0'>Penetration Tester</p>
               </div>
               <div className='d-flex flex-column align-items-center img-team'>
                 <Image src={imageTeam5} width={250}/>
-                <h3 className='text-align-center team-name' onClick={()=>{window.location.href = "https://www.linkedin.com/in/crisdeonuelsiahaan/"}}>Crisdeo Nuel Silahan</h3>
+                <h3 className='text-align-center team-name' onClick={()=>{window.open("https://www.linkedin.com/in/crisdeonuelsiahaan/","_blank")}}>Crisdeo Nuel Silahan</h3>
                 <p className='text-align-center m-0'>Penetration Tester</p>
               </div>
           </Col>
@@ -267,8 +267,8 @@ function App() {
           <div className='d-flex justify-content-between px-5'>
             <Image src={logoFooter} width={150} height={150}/>
             <div className='footer-media d-flex align-self-center'>
-              <Image src={LinkedinIcon} width={30} height={30} className='social-media-img' onClick={()=>{window.location.href = "https://www.linkedin.com/company/nox-guard-security/"}}/>
-              <Image src={gmailIcon} width={30} height={30} className='social-media-img' onClick={()=>{window.location.href = "mailto:noxguardprotection@gmail.com"}}/>
+              <Image src={LinkedinIcon} width={30} height={30} className='social-media-img' onClick={()=>{window.open("https://www.linkedin.com/company/nox-guard-security/","_blank")}}/>
+              <Image src={gmailIcon} width={30} height={30} className='social-media-img' onClick={()=>{window.open("mailto:noxguardprotection@gmail.com","_blank")}}/>
               <Image src={waIcon} width={30} height={30} className='social-media-img'/>
             </div>
           </div>
