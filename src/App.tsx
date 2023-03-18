@@ -162,8 +162,8 @@ function App() {
         <Row className='w-100 h-100 m-0'>
           <Col xxl="12" xl="12" className='h-100'>
               <div className={`ms-5 ${windowSize[0] < 992 ? "section-4-content-sm" : "section-4-content"}`}>
-                <h2 className='about-us-title'>ABOUT US</h2>
-                <p>
+                <h2 className='about-us-title text-align-center'>ABOUT US</h2>
+                <p className='about-us-content'>
                   Nox Guard is a highly skilled and motivated team focused on cybersecurity audit services such as ISO 27001 compliance and penetration testing, as well as education. We aim to identify vulnerabilities and address them before they can be exploited, and we're committed to sharing knowledge through training and consultation to promote a secure environment that inspires confidence in your business operations. With an ever-evolving nature of cyber threats, we stay up-to-date with the latest techniques and technologies to deliver innovative and effective solutions to our clients. Trust us to be your cybersecurity partner and help you secure your digital assets, educate your team, and ensure your peace of mind. Contact us today to learn more.
                 </p>
               </div>
