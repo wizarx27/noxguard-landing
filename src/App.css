@@ -151,6 +151,7 @@ body{
 .service-description{
   max-height: 0px;
   overflow: hidden;
+  font-size: 25px;
   transition: max-height 2s;
 }
 .service-description.active{
