@@ -261,7 +261,7 @@ function App() {
               </div>
               <div className='d-flex flex-column align-items-center img-team'>
                 <Image src={imageTeam5} width={250}/>
-                <h3 className='text-align-center team-name' onClick={()=>{window.open("https://www.linkedin.com/in/crisdeonuelsiahaan/","_blank")}}>Crisdeo Nuel Silahan</h3>
+                <h3 className='text-align-center team-name' onClick={()=>{window.open("https://www.linkedin.com/in/crisdeonuelsiahaan/","_blank")}}>Crisdeo Nuel Siahaan</h3>
                 <p className='text-align-center m-0'>Penetration Tester</p>
               </div>
           </Col>
