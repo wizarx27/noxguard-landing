@@ -7,6 +7,10 @@
   src: url('./fonts/Prompt-Bold.ttf') format('truetype');
 }
 
+html{
+  overflow-x: hidden;
+  max-width: 100%;
+}
 body{
   background-color: #131313;
   overflow-x: hidden;
@@ -115,6 +119,11 @@ body{
   height: 400px;
   margin: auto;
   display: block;
+}
+
+.img-about-us-sm{
+  width: 300px;
+  height: 100px;
 }
 
 .section-4-content{

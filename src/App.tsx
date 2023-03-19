@@ -52,13 +52,12 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar bg="light" expand="lg" style={{width:windowSize[0]-15}}>
+      <Navbar bg="light" expand="lg" style={{width:"100%"}}>
         {/* {windowSize[0]}
         <br />
         {windowSize[1]} */}
         <div className={'m-0 d-flex flex-grow-1 px-3' + (windowSize[0] < 992 ? " justify-content-between" : "")}>
           <Navbar.Brand href="/"><Image src={logoNavbar} height={40}/></Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto nav-container">
               <Nav.Link href="#COMPANY">COMPANY</Nav.Link>
@@ -73,17 +72,27 @@ function App() {
               <Image src={signInButton} height={30} width={80}/>
             </Nav>
           </Navbar.Collapse>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
         </div>
       </Navbar>
-      <div className='section' style={{height:windowSize[0] < 1320 ? windowSize[1] * 2 -100 : windowSize[1]-100,width:windowSize[0]-15}}>
+      <div className='section' style={
+          {
+            height:
+            windowSize[0] <= 400  ? windowSize[1] * 2
+            : windowSize[0] < 1320 ? windowSize[1] * 2 -100 
+            : windowSize[1]-100,
+            width:"100%"
+          }
+        }
+      >
         <Image src={banner1} className='banner-bg'/>
         <div className='header-gap mb-3'></div>
         <Row className='w-100 h-100 m-0 align-items-center'>
           <Col xxl="6" xl="6" lg="12" md="12" sm="12" xs="12" className='p-0'>
-            <Image src={logoAboutUs} className='img-about-us my-5'/>
+            <Image src={logoAboutUs} className={`img-about-us my-5 ${windowSize[0] <= 400 ? "img-about-us-sm" : ""}`}/>
           </Col>
           <Col xxl="6" xl="6" lg="12" md="12" sm="12" xs="12" className='p-0 h-100'>
-            <div className='d-flex flex-column banner-text'>
+            <div className={`d-flex flex-column ${windowSize[0] <= 400 ? "" : "banner-text"}`}>
               <h2 className={`banner-title ${windowSize[0] < 1320 ? "banner-title-sm" : ""}`}>
                 RAISING THE BAR 
                 <br />
@@ -155,7 +164,7 @@ function App() {
       <div className='section section-4' >
         <Row className='w-100 h-100 m-0'>
           <Col xxl="12" xl="12" className='h-100'>
-              <Image src={logoAboutUs} className='img-about-us my-5'/>
+              <Image src={logoAboutUs} className={`img-about-us my-5 ${windowSize[0] <= 400 ? "img-about-us-sm" : ""}`}/>
           </Col>
           <Col xxl="12" xl="12" className='h-100'>
               <div className={`${windowSize[0] < 992 ? "section-4-content-sm" : "section-4-content"}`}>
