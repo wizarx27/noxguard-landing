@@ -226,7 +226,7 @@ function App() {
         </Row>
       </div>
       <div className='separator tiny'></div>
-      <div className='section section-6' >
+      {/* <div className='section section-6' >
         <Row className='w-100 h-100 m-0'>
           <Col xxl="12" xl="12" className='h-100 my-5 mx-0'>
               <h2 className='text-align-center the-team-title'>THE TEAM</h2>
@@ -266,7 +266,7 @@ function App() {
               </div>
           </Col>
         </Row>
-      </div>
+      </div> */}
 
       <div className='section footer' >
         <Row className='w-100 h-100 m-0'>
