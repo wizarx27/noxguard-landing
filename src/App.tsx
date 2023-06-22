@@ -85,7 +85,7 @@ function App() {
           }
         }
       >
-        <Image src={banner1} className='banner-bg'/>
+        <Image src={banner1} className='banner-bg' alt='ddd'/>
         <div className='header-gap mb-3'></div>
         <Row className='w-100 h-100 m-0 align-items-center'>
           <Col xxl="6" xl="6" lg="12" md="12" sm="12" xs="12" className='p-0'>
