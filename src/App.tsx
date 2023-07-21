@@ -13,9 +13,9 @@ import logoFooter from "./logos/logos-07.png"
 import banner1 from "./assets/bg_1.jpg"
 import signInButton from "./assets/sign-in-btn.png"
 import startNowButton from "./assets/start-now.png"
-import IcnFast from "./assets/Icon-Fast.png"
-import IcnPrice from "./assets/Icon-price.png"
-import IcnQuality from "./assets/Icon-quality.png"
+import IcnFast from "./assets/Value_2.png"
+import IcnPrice from "./assets/Value_1.png"
+import IcnQuality from "./assets/Value_3.png"
 import decor3 from "./assets/decor-3.png"
 import imageTeam1 from "./assets/Anggota-1.png"
 import imageTeam2 from "./assets/Anggota-2.png"
@@ -118,12 +118,12 @@ function App() {
         </Row>
         <ContactModal isOpenModal={isModalOpen} setIsOpenModal={handleToggleModal} />
       </div>
-      <div className='separator'></div>
+      {/* <div className='separator'></div> */}
       <div className='section section-2' >
         <Row className='w-100 h-100 m-0'>
-          <Col xxl="12" xl="12" className=''>
+          <Col xxl="12" xl="12" className='p-0'>
               <div className='section-2-content'>
-                <h2 className='text-align-center'>WHY NOX GUARD?</h2>
+                <h2 className='text-align-center why-text-head'>WHY NOXGUARD?</h2>
                 <p className='text-align-center'>
                   At Nox Guard, we specialize in security audit (ISO 27001) and penetration testing, and our highly skilled team is passionate about educating clients on the best cybersecurity practices. Trust us to secure your digital assets with expertise and dedication.
                 </p>
@@ -131,7 +131,7 @@ function App() {
           </Col>
         </Row>
       </div>
-      <div className='separator tiny'></div>
+      {/* <div className='separator tiny'></div> */}
       <div className='section section-3' >
         <Row className='w-100 h-100 m-0'>
           <Col xxl="12" xl="12" className='p-0'>
@@ -140,44 +140,46 @@ function App() {
                 <div className='d-flex section-3-content-content justify-content-center flex-wrap'>
                   <div className='d-flex flex-column align-items-center mb-5'>
                     <Image src={IcnPrice} width={305} height={305}/>
-                    <h3>AFFORDABLE PRICING</h3>
-                    <p>
+                    <h3 className='values-exp-title'>AFFORDABLE PRICING</h3>
+                    <p className='values-exp'>
                       We offer a cheaper price than our competitors for our services.
                     </p>
                   </div>
                   <div className='d-flex flex-column align-items-center'>
                     <Image src={IcnFast} width={305} height={305}/>
-                    <h3>FAST AND ACCURATE</h3>
-                    <p>
+                    <h3 className='values-exp-title'>FAST AND ACCURATE</h3>
+                    <p className='values-exp'>
                       Our service is characterized by a speedy and precise performance. 
                     </p>
                   </div>
                   <div className='d-flex flex-column align-items-center'>
                     <Image src={IcnQuality} width={305} height={305}/>
-                    <h3>QUALITY</h3>
-                    <p>
+                    <h3 className='values-exp-title'>QUALITY</h3>
+                    <p className='values-exp'>
                       Our clients guarantee and praise the quality of our service.
                     </p>
                   </div>
                 </div>
-                <div className='separator tiny'></div>
+                {/* <div className='separator tiny'></div> */}
                 <div className='text-align-center about-us-below'>
-                  PENETRATION TESTING AND AUDIT HELPS TO IDENTIFYING <br />
-                  SECURITY VULNERABILITIES BEFORE MALICIOUS ATTACKS CAN OCCUR
+                  <div className='about-us-below-wrapper'>
+                    PENETRATION TESTING AND AUDIT HELPS TO IDENTIFYING <br />
+                    SECURITY VULNERABILITIES BEFORE MALICIOUS ATTACKS CAN OCCUR
+                  </div>
                 </div>
-                <div className='separator tiny'></div>
+                {/* <div className='separator tiny'></div> */}
               </div>
           </Col>
         </Row>
       </div>
       <div className='section section-4' >
-        <Row className='w-100 h-100 m-0'>
-          <Col xxl="12" xl="12" className='h-100'>
-              <Image src={logoAboutUs} className={`img-about-us my-5 ${windowSize[0] <= 400 ? "img-about-us-sm" : ""}`}/>
+        <Row className='w-100 h-100 m-0 align-items-center py-5'>
+          <Col xxl="3" xl="4" className='h-25'>
+              <h2 className='about-us-title text-align-center'>ABOUT US</h2>
           </Col>
-          <Col xxl="12" xl="12" className='h-100'>
+          <Col xxl="9" xl="8" className='h-75'>
               <div className={`${windowSize[0] < 992 ? "section-4-content-sm" : "section-4-content"}`}>
-                <h2 className='about-us-title text-align-center'>ABOUT US</h2>
+                
                 <p className='about-us-content'>
                   Nox Guard is a highly skilled and motivated team focused on cybersecurity audit services such as ISO 27001 compliance and penetration testing, as well as education. We aim to identify vulnerabilities and address them before they can be exploited, and we're committed to sharing knowledge through training and consultation to promote a secure environment that inspires confidence in your business operations. With an ever-evolving nature of cyber threats, we stay up-to-date with the latest techniques and technologies to deliver innovative and effective solutions to our clients. Trust us to be your cybersecurity partner and help you secure your digital assets, educate your team, and ensure your peace of mind. Contact us today to learn more.
                 </p>
