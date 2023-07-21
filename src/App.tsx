@@ -17,6 +17,10 @@ import IcnFast from "./assets/Value_2.png"
 import IcnPrice from "./assets/Value_1.png"
 import IcnQuality from "./assets/Value_3.png"
 import decor3 from "./assets/decor-3.png"
+import servicePen from "./assets/Service_1.png"
+import serviceEmploye from "./assets/Service_3.png"
+import serviceIso from "./assets/Service_2.png"
+import serviceAcademy from "./assets/Service_4.png"
 import imageTeam1 from "./assets/Anggota-1.png"
 import imageTeam2 from "./assets/Anggota-2.png"
 import imageTeam3 from "./assets/Anggota-3.png"
@@ -174,8 +178,8 @@ function App() {
       </div>
       <div className='section section-4' >
         <Row className='w-100 h-100 m-0 align-items-center py-5'>
-          <Col xxl="3" xl="4" className='h-25'>
-              <h2 className='about-us-title text-align-center'>ABOUT US</h2>
+          <Col xxl="3" xl="4" className='h-25 ps-5'>
+              <h2 className='about-us-title'>ABOUT NOXGUARD</h2>
           </Col>
           <Col xxl="9" xl="8" className='h-75'>
               <div className={`${windowSize[0] < 992 ? "section-4-content-sm" : "section-4-content"}`}>
@@ -188,7 +192,7 @@ function App() {
         </Row>
         
       </div>
-      <div className='separator tiny'></div>
+      {/* <div className='separator tiny'></div> */}
       <div className='section section-5' >
         <Row className='w-100 h-100 m-0'>
           <Col xxl="12" xl="12" className='h-100 my-5 mx-0'>
@@ -196,47 +200,47 @@ function App() {
           </Col>
         </Row>
         <Row className={`w-100 h-100 m-0 ${windowSize[0] < 1200 ? "mt-5" : "my-5"} `}>
-          <Col xxl="6" xl="6" className='h-100 mb-5'>
-              <div onMouseEnter={()=>{setPentestOpen(true)}} onMouseLeave={()=>{setPentestOpen(false)}} className='d-flex align-items-center justify-content-center'>
-                <Image src={decor3} width={20} height={20}/>
-                <span className='ms-2 our-service-content-title'>Penetration Testing</span>
+          <Col xxl="6" xl="6" className='h-100 mb-5 d-flex'>
+              <Image src={servicePen} width={200} height={200}/>
+              <div className='d-flex flex-column ms-5'>
+                <span className='our-service-content-title'>Penetration Testing</span>
+                <p className={`service-description active `}>
+                  Penetration testing is a thorough examination of your web and mobile applications,databases, infrastructure, and networks to assess their security posture
+                </p>              
               </div>
-              <p className={`margin-offset text-align-center service-description ${pentestOpen ? "active" : ""} `}>
-                Penetration testing is a thorough examination of your web and mobile applications,databases, infrastructure, and networks to assess their security posture
-              </p>              
           </Col>
-          <Col xxl="6" xl="6" className='h-100 mb-5'>
-              <div onMouseEnter={()=>{setemployeeTraining(true)}} onMouseLeave={()=>{setemployeeTraining(false)}} className='d-flex align-items-center justify-content-center'>
-                <Image src={decor3} width={20} height={20}/>
-                <span className='ms-2 our-service-content-title'>Employee Training</span>
+          <Col xxl="6" xl="6" className='h-100 mb-5 d-flex'>
+              <Image src={serviceEmploye} width={200} height={200}/>
+              <div className='d-flex flex-column ms-5'>
+                <span className='our-service-content-title'>Employee Training</span>
+                <p className={`service-description active `}> 
+                  Our training program is designed to increase your employees security awareness through social engineering, briefings, and phishing simulations. This is crucial because humans are often the weakest link in cybersecurity.
+                </p>  
               </div>
-              <p className={`margin-offset text-align-center service-description ${employeeTraining ? "active" : ""} `}> 
-                Our training program is designed to increase your employees security awareness through social engineering, briefings, and phishing simulations. This is crucial because humans are often the weakest link in cybersecurity.
-              </p>  
           </Col>
         </Row>
         <Row className={`w-100 h-100 m-0 ${windowSize[0] < 1200 ? "mb-5" : "my-5"} `}>
-          <Col xxl="6" xl="6" className='h-100 mb-5'>
-              <div onMouseEnter={()=>{setIsoOpen(true)}} onMouseLeave={()=>{setIsoOpen(false)}} className='d-flex align-items-center justify-content-center'>
-                <Image src={decor3} width={20} height={20}/>
-                <span className={'ms-2 our-service-content-title' + (windowSize[0] < 1200 ? " our-service-content-title-sm" : "")}>ISO 27001 and NIST Assessment</span>
+          <Col xxl="6" xl="6" className='h-100 mb-5 d-flex'>
+              <Image src={serviceIso} width={200} height={200}/>
+              <div className='d-flex flex-column ms-5'>
+                <span className={'our-service-content-title'}>ISO 27001 and NIST Assessment</span>
+                <p className={`service-description active `}>
+                  ISO 27001 and NIST assessment ensures that your organization compiles with the iso 27001 and NIST standards
+                </p>              
               </div>
-              <p className={`margin-offset text-align-center service-description ${isoOpen ? "active" : ""} `}>
-                ISO 27001 and NIST assessment ensures that your organization compiles with the iso 27001 and NIST standards
-              </p>              
           </Col>
-          <Col xxl="6" xl="6" className='h-100 mb-5'>
-              <div onMouseEnter={()=>{setAcademy(true)}} onMouseLeave={()=>{setAcademy(false)}} className='d-flex align-items-center justify-content-center'>
-                <Image src={decor3} width={20} height={20}/>
-                <span className='ms-2 our-service-content-title'>Academy</span>
+          <Col xxl="6" xl="6" className='h-100 mb-5 d-flex'>
+              <Image src={serviceAcademy} width={200} height={200}/>
+              <div className='d-flex flex-column ms-5'>
+                <span className='our-service-content-title'>Academy</span>
+                <p className={`service-description active `}>
+                  Our Academy offers a comprehensize range of technical classes, from beginner to advanced levels, designed to enhance your knowledge and expertise in cybersecurity
+                </p>  
               </div>
-              <p className={`margin-offset text-align-center service-description ${academy ? "active" : ""} `}>
-                Our Academy offers a comprehensize range of technical classes, from beginner to advanced levels, designed to enhance your knowledge and expertise in cybersecurity
-              </p>  
           </Col>
         </Row>
       </div>
-      <div className='separator tiny'></div>
+      {/* <div className='separator tiny'></div> */}
       {/* <div className='section section-6' >
         <Row className='w-100 h-100 m-0'>
           <Col xxl="12" xl="12" className='h-100 my-5 mx-0'>
@@ -282,7 +286,7 @@ function App() {
       <div className='section footer' >
         <Row className='w-100 h-100 m-0'>
           <div className='d-flex justify-content-between px-5'>
-            <Image src={logoFooter} width={150} height={150}/>
+            <Image src={logoNavbar} width={100} height={60} className='py-2' />
             <div className='footer-media d-flex align-self-center'>
               <Image src={LinkedinIcon} width={30} height={30} className='social-media-img' onClick={()=>{window.open("https://www.linkedin.com/company/nox-guard-security/","_blank")}}/>
               <Image src={gmailIcon} width={30} height={30} className='social-media-img' onClick={()=>{window.open("mailto:noxguardprotection@gmail.com","_blank")}}/>
