@@ -21,6 +21,22 @@ body{
   margin: 0 15px;
 }
 
+.App{
+  position: relative;
+}
+
+.custom-navbar-class{
+  position: absolute !important;
+  /* opacity: 0.7; */
+  background-color: rgba(255,255,255,.7) !important;
+  z-index: 1;
+}
+
+.nav-container .nav-link{
+  color: black;
+  font-weight: bolder;
+}
+
 .section{
   position: relative;
   
@@ -29,7 +45,20 @@ body{
 .sign-in-btn{
   margin-left: 90px;
   cursor: pointer;
+  background-color: #4d80ff;
+  padding: 5px 35px;
+  text-align: center;
+  color: white;
+  padding-left: 35px !important;
+  opacity: 1;
 }
+
+.sign-in-btn div{
+  text-align: center;
+  color: black;
+  
+}
+
 .sign-in-btn-small{
   margin-left: 10px;
   cursor: pointer;
@@ -37,10 +66,18 @@ body{
 
 .start-now-btn{
   cursor: pointer;
+  width: 30%;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  padding: 10px 10px;
+  font-weight: bold;
+  font-family: 'Prompt-Regular';
+  background: linear-gradient(90deg, hsla(228, 29%, 13%, 1) 0%, hsla(236, 39%, 24%, 1) 25%, hsla(248, 65%, 39%, 1) 50%, hsla(223, 100%, 65%, 1) 75%);
 }
 
 .green-text{
-  color: #7BF273;
+  color: #4d7ffe;
 }
 
 .banner-bg{
@@ -53,7 +90,7 @@ body{
 .banner-title{
   font-family: 'Prompt-Regular';
   font-size: 60px;
-  color: white;
+  color: black;
   /* padding-top: 15%; */
   font-weight: bold;
 }

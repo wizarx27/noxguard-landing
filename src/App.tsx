@@ -8,9 +8,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 import logoNavbar from "./logos/logos-08.png"
-import logoAboutUs from "./logos/logos-05.png"
+import logoAboutUs from "./assets/Logo_Banner_1.png"
 import logoFooter from "./logos/logos-07.png"
-import banner1 from "./assets/Banner-1.png"
+import banner1 from "./assets/bg_1.jpg"
 import signInButton from "./assets/sign-in-btn.png"
 import startNowButton from "./assets/start-now.png"
 import IcnFast from "./assets/Icon-Fast.png"
@@ -59,7 +59,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar bg="light" expand="lg" style={{width:"100%"}}>
+      <Navbar expand="lg" style={{width:"100%"}} className='custom-navbar-class'>
         {/* {windowSize[0]}
         <br />
         {windowSize[1]} */}
@@ -76,7 +76,9 @@ function App() {
               <Nav.Link href="#CONTACT">CONTACT</Nav.Link>
             </Nav>
             <Nav className={windowSize[0] < 992 ? 'sign-in-btn-small' : 'sign-in-btn'}>
-              <Image src={signInButton} height={30} width={80}/>
+              SIGN IN
+              {/* <Image src={signInButton} height={30} width={80}/> */}
+              {/* <div ></div> */}
             </Nav>
           </Navbar.Collapse>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -93,7 +95,6 @@ function App() {
         }
       >
         <Image src={banner1} className='banner-bg'/>
-        <div className='header-gap mb-3'></div>
         <Row className='w-100 h-100 m-0 align-items-center'>
           <Col xxl="6" xl="6" lg="12" md="12" sm="12" xs="12" className='p-0'>
             <Image src={logoAboutUs} className={`img-about-us my-5 ${windowSize[0] <= 400 ? "img-about-us-sm" : ""}`}/>
@@ -109,12 +110,12 @@ function App() {
               </h2>
               {/* <p></p> */}
               <div className={`pt-5 ${windowSize[0] < 1320 ? "mx-auto" : ""}`} onClick={()=>{handleToggleModal()}}>
-                <Image src={startNowButton} className='start-now-btn'/>
+                <div className='start-now-btn'>START NOW</div>
+                {/* <Image src={startNowButton} className='start-now-btn'/> */}
               </div>
             </div>
           </Col>
         </Row>
-        <div className='header-gap-bot mb-3'></div>
         <ContactModal isOpenModal={isModalOpen} setIsOpenModal={handleToggleModal} />
       </div>
       <div className='separator'></div>
