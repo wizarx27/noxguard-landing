@@ -25,6 +25,7 @@ import imageTeam5 from "./assets/Anggota-5.png"
 import waIcon from "./assets/WA-icon.png"
 import gmailIcon from "./assets/GMAIL-icon.png"
 import LinkedinIcon from "./assets/LinkedIn-icon.png"
+import ContactModal from './component/ContactModal/ContactModal';
 
 function App() {
   const [windowSize, setWindowSize] = useState([
@@ -36,6 +37,12 @@ function App() {
   const [employeeTraining,setemployeeTraining] = useState(false)
   const [isoOpen,setIsoOpen] = useState(false)
   const [academy,setAcademy] = useState(false)
+  const [isModalOpen,setIsModalOpen] = useState(false)
+
+  const handleToggleModal = ()=>{
+    setIsModalOpen(!isModalOpen)
+  }
+
 
   useEffect(() => {
     const handleWindowResize = () => {
@@ -101,13 +108,14 @@ function App() {
                 <span className='green-text'> ONE AUDIT AT A TIME.</span>
               </h2>
               {/* <p></p> */}
-              <div className={`pt-5 ${windowSize[0] < 1320 ? "mx-auto" : ""}`}>
+              <div className={`pt-5 ${windowSize[0] < 1320 ? "mx-auto" : ""}`} onClick={()=>{handleToggleModal()}}>
                 <Image src={startNowButton} className='start-now-btn'/>
               </div>
             </div>
           </Col>
         </Row>
         <div className='header-gap-bot mb-3'></div>
+        <ContactModal isOpenModal={isModalOpen} setIsOpenModal={handleToggleModal} />
       </div>
       <div className='separator'></div>
       <div className='section section-2' >
@@ -285,7 +293,7 @@ function App() {
         </Row>
         
       </div>
-
+      
     </div>
   );
 }
