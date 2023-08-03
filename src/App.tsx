@@ -30,6 +30,9 @@ import waIcon from "./assets/WA-icon.png"
 import gmailIcon from "./assets/GMAIL-icon.png"
 import LinkedinIcon from "./assets/LinkedIn-icon.png"
 import ContactModal from './component/ContactModal/ContactModal';
+import frameService from './assets/frame_service.png'
+import frameValue from './assets/frame_value.png'
+import mottoBg from './assets/Motto.png'
 
 function App() {
   const [windowSize, setWindowSize] = useState([
@@ -142,21 +145,21 @@ function App() {
               <div className='section-3-content'>
                 <h2 className='text-align-center our-values-title'>OUR VALUES</h2>
                 <div className='d-flex section-3-content-content justify-content-center flex-wrap'>
-                  <div className='d-flex flex-column align-items-center mb-5'>
+                  <div className='d-flex flex-column align-items-center section-3-content-border'>
                     <Image src={IcnPrice} width={305} height={305}/>
                     <h3 className='values-exp-title'>AFFORDABLE PRICING</h3>
                     <p className='values-exp'>
                       We offer a cheaper price than our competitors for our services.
                     </p>
                   </div>
-                  <div className='d-flex flex-column align-items-center'>
+                  <div className='d-flex flex-column align-items-center section-3-content-border'>
                     <Image src={IcnFast} width={305} height={305}/>
                     <h3 className='values-exp-title'>FAST AND ACCURATE</h3>
                     <p className='values-exp'>
                       Our service is characterized by a speedy and precise performance. 
                     </p>
                   </div>
-                  <div className='d-flex flex-column align-items-center'>
+                  <div className='d-flex flex-column align-items-center section-3-content-border'>
                     <Image src={IcnQuality} width={305} height={305}/>
                     <h3 className='values-exp-title'>QUALITY</h3>
                     <p className='values-exp'>
@@ -200,7 +203,7 @@ function App() {
           </Col>
         </Row>
         <Row className={`w-100 h-100 m-0 ${windowSize[0] < 1200 ? "mt-5" : "my-5"} `}>
-          <Col xxl="6" xl="6" className='h-100 mb-5 d-flex'>
+          <Col xxl="5" xl="5" className='h-100 d-flex section-4-content-border'>
               <Image src={servicePen} width={200} height={200}/>
               <div className='d-flex flex-column ms-5'>
                 <span className='our-service-content-title'>Penetration Testing</span>
@@ -209,7 +212,7 @@ function App() {
                 </p>              
               </div>
           </Col>
-          <Col xxl="6" xl="6" className='h-100 mb-5 d-flex'>
+          <Col xxl="5" xl="5" className='h-100 d-flex section-4-content-border'>
               <Image src={serviceEmploye} width={200} height={200}/>
               <div className='d-flex flex-column ms-5'>
                 <span className='our-service-content-title'>Employee Training</span>
@@ -220,7 +223,7 @@ function App() {
           </Col>
         </Row>
         <Row className={`w-100 h-100 m-0 ${windowSize[0] < 1200 ? "mb-5" : "my-5"} `}>
-          <Col xxl="6" xl="6" className='h-100 mb-5 d-flex'>
+          <Col xxl="5" xl="5" className='h-100 mb-5 d-flex section-4-content-border'>
               <Image src={serviceIso} width={200} height={200}/>
               <div className='d-flex flex-column ms-5'>
                 <span className={'our-service-content-title'}>ISO 27001 and NIST Assessment</span>
@@ -229,7 +232,7 @@ function App() {
                 </p>              
               </div>
           </Col>
-          <Col xxl="6" xl="6" className='h-100 mb-5 d-flex'>
+          <Col xxl="5" xl="5" className='h-100 mb-5 d-flex section-4-content-border'>
               <Image src={serviceAcademy} width={200} height={200}/>
               <div className='d-flex flex-column ms-5'>
                 <span className='our-service-content-title'>Academy</span>
