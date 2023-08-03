@@ -116,8 +116,8 @@ function App() {
                 <span className='green-text'> ONE AUDIT AT A TIME.</span>
               </h2>
               {/* <p></p> */}
-              <div className={`pt-5 ${windowSize[0] < 1320 ? "mx-auto" : ""}`} onClick={()=>{handleToggleModal()}}>
-                <div className='start-now-btn'>START NOW</div>
+              <div className={`${windowSize[0] < 1320 ? "mx-auto pt-5 " : ""}`} onClick={()=>{handleToggleModal()}}>
+                <div className={`start-now-btn ${windowSize[0] < 1320 ? "start-now-btn-sm" : ""}`}>START NOW</div>
                 {/* <Image src={startNowButton} className='start-now-btn'/> */}
               </div>
             </div>
@@ -131,7 +131,7 @@ function App() {
           <Col xxl="12" xl="12" className='p-0'>
               <div className='section-2-content'>
                 <h2 className='text-align-center why-text-head'>WHY NOXGUARD?</h2>
-                <p className='text-align-center'>
+                <p className={`text-align-center ${windowSize[0] < 1320 ? "more-pad" : ""}`}>
                   At Nox Guard, we specialize in security audit (ISO 27001) and penetration testing, and our highly skilled team is passionate about educating clients on the best cybersecurity practices. Trust us to secure your digital assets with expertise and dedication.
                 </p>
               </div>
@@ -289,7 +289,7 @@ function App() {
       <div className='section footer' >
         <Row className='w-100 h-100 m-0'>
           <div className='d-flex justify-content-between px-5'>
-            <Image src={logoNavbar} width={100} height={60} className='py-2' />
+            <Image src={logoNavbar} width={110} height={60} className='py-2' />
             <div className='footer-media d-flex align-self-center'>
               <Image src={LinkedinIcon} width={30} height={30} className='social-media-img' onClick={()=>{window.open("https://www.linkedin.com/company/nox-guard-security/","_blank")}}/>
               <Image src={gmailIcon} width={30} height={30} className='social-media-img' onClick={()=>{window.open("mailto:noxguardprotection@gmail.com","_blank")}}/>

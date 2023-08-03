@@ -1,7 +1,6 @@
 .input-form-contact{
-    border: 0;
+    border: 2px solid black;
     border-radius: 0px;
-    border-bottom: 2px solid black;
     
 }
 
@@ -9,25 +8,39 @@
     
     box-shadow: none;
 }
+.input-form-label{
+    font-size: 16px;
+    font-weight: bold;
+}
+.phone-diff{
+    font-size: 12px;
+    font-weight: normal;
+}
 
 .submit-contact-btn{
-    border: 2px solid black;
-    background-color: transparent;
-    color: black;
+    background-color: #4d80ff;
+    color: white;
     border-radius: 0px;
     font-weight: bolder;
+    margin: auto;
+    display: block;
 }
 
-.submit-contact-btn:hover{
+/* .submit-contact-btn:hover{
     background-color: transparent;
     color: black;
     border: 2px solid black;
     font-weight: bolder;
-}
+} */
 
 .contact-form-modal,body{
     padding: 0px !important;
 }
+
 .contact-form-modal .modal-content{
-    border-radius: 0;
+    border-radius: 20px;
+}
+
+html:has(.contact-form-modal){
+    overflow: hidden;
 }
