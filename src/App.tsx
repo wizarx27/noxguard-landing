@@ -46,7 +46,9 @@ function App() {
   const [academy,setAcademy] = useState(false)
   const [isModalOpen,setIsModalOpen] = useState(false)
 
+  
   const handleToggleModal = ()=>{
+    
     setIsModalOpen(!isModalOpen)
   }
 
@@ -63,6 +65,14 @@ function App() {
       window.removeEventListener('resize', handleWindowResize);
     };
   },[]);
+
+  useEffect(() => {
+    if (isModalOpen){
+      document.firstElementChild?.classList.add("bruh")
+    }else{
+      document.firstElementChild?.classList.remove("bruh")
+    }
+  },[isModalOpen]);
 
   return (
     <div className="App">
