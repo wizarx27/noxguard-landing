@@ -298,12 +298,12 @@ function App() {
 
       <div className='section footer' >
         <Row className='w-100 h-100 m-0'>
-          <div className='d-flex justify-content-between px-5'>
-            <Image src={logoNavbar} width={110} height={60} className='py-2' />
+          <div className='d-flex justify-content-between px-5 py-3'>
+            <Image src={logoNavbar} width={120} height={55} className='py-2' />
             <div className='footer-media d-flex align-self-center'>
-              <Image src={LinkedinIcon} width={30} height={30} className='social-media-img' onClick={()=>{window.open("https://www.linkedin.com/company/nox-guard-security/","_blank")}}/>
-              <Image src={gmailIcon} width={30} height={30} className='social-media-img' onClick={()=>{window.open("mailto:noxguardprotection@gmail.com","_blank")}}/>
+              <Image src={LinkedinIcon} width={25} height={25} className='social-media-img' onClick={()=>{window.open("https://www.linkedin.com/company/nox-guard-security/","_blank")}}/>
               <Image src={waIcon} width={30} height={30} className='social-media-img'/>
+              <Image src={gmailIcon} width={30} height={30} className='social-media-img' onClick={()=>{window.open("mailto:noxguardprotection@gmail.com","_blank")}}/>
             </div>
           </div>
           <div className='footer-gap mb-3'></div>
