@@ -33,6 +33,7 @@ import ContactModal from './component/ContactModal/ContactModal';
 import frameService from './assets/frame_service.png'
 import frameValue from './assets/frame_value.png'
 import mottoBg from './assets/Motto.png'
+import SigninModal from './component/SignInModal/SignInModal';
 
 function App() {
   const [windowSize, setWindowSize] = useState([
@@ -45,11 +46,17 @@ function App() {
   const [isoOpen,setIsoOpen] = useState(false)
   const [academy,setAcademy] = useState(false)
   const [isModalOpen,setIsModalOpen] = useState(false)
+  const [isModalSignInOpen,setIsModalSignInOpen] = useState(false)
 
   
   const handleToggleModal = ()=>{
     
     setIsModalOpen(!isModalOpen)
+  }
+
+  const handleToggleModalSignIn = ()=>{
+    
+    setIsModalSignInOpen(!isModalSignInOpen)
   }
 
 
@@ -92,7 +99,7 @@ function App() {
               <Nav.Link href="#CAREER">CAREER</Nav.Link>
               <Nav.Link href="#CONTACT">CONTACT</Nav.Link>
             </Nav>
-            <Nav className={windowSize[0] < 992 ? 'sign-in-btn-small' : 'sign-in-btn'}>
+            <Nav className={windowSize[0] < 992 ? 'sign-in-btn-small' : 'sign-in-btn'} onClick={()=>{handleToggleModalSignIn()}}>
               SIGN IN
               {/* <Image src={signInButton} height={30} width={80}/> */}
               {/* <div ></div> */}
@@ -134,6 +141,7 @@ function App() {
           </Col>
         </Row>
         <ContactModal isOpenModal={isModalOpen} setIsOpenModal={handleToggleModal} />
+        <SigninModal isOpenModal={isModalSignInOpen} setIsOpenModal={handleToggleModalSignIn} />
       </div>
       {/* <div className='separator'></div> */}
       <div className='section section-2' >
