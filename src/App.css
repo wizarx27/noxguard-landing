@@ -138,7 +138,7 @@ body{
   background-color: #f8f8f8;
 }
 .footer{
-  background-color: #4d7ffe;
+  background-color: #282c54;
 }
 
 .section-2{
@@ -369,12 +369,12 @@ body{
 .footer-gap{
   width: 95% !important;
   height: 1px;
-  background-color: black;
+  background-color: white;
   margin: auto;
 }
 
 .copyright-footer{
-  color: black;
+  color: white;
 }
 
 .social-media-img{
